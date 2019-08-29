@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun custing() {
+    fun casting() {
         var someChar: Char = 'a' //"a" will not compile because if you want a single char you need to wrap it with a single '
         println("Is a a char tho?  ${someChar is Char}")//How cool is that, this "${someChar is Char}" can go inside a print
 
