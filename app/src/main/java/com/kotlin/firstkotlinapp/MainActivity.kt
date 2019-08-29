@@ -90,6 +90,22 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+    
+    fun stringManipulations(){
+    val firstString = "hey bob"
+    val secondString = "how are you doing"
+    
+    println("$firstString  $secondString" )//concatinate strings together
+    println("1+2 is ${1+2}")
+    println("first name length is ${firstString.length}")
+    
+    println("firstString is the same as secondString? ${firstString.equals(secondString)}")
+    
+    println(" ${'A'.compareTo('b')}")
+    println(" ${'A'.equals('b')}")
+    
+    
+}
 
 
 }
