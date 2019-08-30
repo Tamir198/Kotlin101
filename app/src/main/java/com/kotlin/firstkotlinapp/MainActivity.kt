@@ -103,6 +103,8 @@ class MainActivity : AppCompatActivity() {
     
     println(" ${'A'.compareTo('b')}")
     println(" ${'A'.equals('b')}")
+        
+    println("${firstString.get(2)}") //get string at the second index   or just "string[index]"
     
     
 }
