@@ -106,6 +106,28 @@ class MainActivity : AppCompatActivity() {
         
     println("${firstString.get(2)}") //get string at the second index   or just "string[index]"
     
+   
+}
+    
+  fun collections(){
+    
+  var array = Array(5,{x -> x * x})//the array got 5 indexes  and every index multiply itself by his value (index 2 will be 2*2=4)
+  println(array[3])
+ 
+  //This is range in kotlin, you can create range of numebr or letters using this syntax:
+  
+  val oneTo10 = 1..10
+  val TenTo1 = 10.downTo(1)
+  val upTo10 = 10.downTo(1)
+  val fiveTo20 = 5.rangeTo(20)
+  val oneTo10Step3 = oneTo10.step(3)//this will be exactly like 1..10 but with steps of 3 (1,4,7,10)
+  val alphabet = "A".."Z"
+ println("Is 5 inside oneTo10?  ${ 5 in oneTo10 } ")
+ println("Is B inside the alphabet?  ${ "B" in alphabet } ")
+ 
+ 
+ for(x:Int in oneTo10Step3)println("oneTo10Step3 is $x")// iterating over range/array
+ for(x in oneTo10.reversed())print("$x ") //This will print 10 9 8 7 6 5 4 3 2 1 because I have used reversed()
     
 }
 
