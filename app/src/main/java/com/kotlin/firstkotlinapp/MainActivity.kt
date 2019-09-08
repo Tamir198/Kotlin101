@@ -140,6 +140,18 @@ class MainActivity : AppCompatActivity() {
             print("x is neither 1 nor 2")
         }
 }
+        
+        fun loops(){
+            var mRange:IntArray = intArrayOf(1,2,3,4,5,6)
+            for(i in mRange.indices){//.indices is to starty from the idex and prevern index out of bound exption
+            //println(mRange[i]) works
+            println("${mRange[i]}") 
+   
+           }
+   
+           for ((index, value) in mRange.withIndex()) {
+           println("the element at $index is $value")
+       }
 
 
 }
