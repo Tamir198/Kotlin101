@@ -152,6 +152,31 @@ class MainActivity : AppCompatActivity() {
            for ((index, value) in mRange.withIndex()) {
            println("the element at $index is $value")
        }
+            
+            
+       fun sum(num1:Int, num2:Int):Int = num1 + num2 //single line function can be done without the return type  
+       fun subtract(num1:Int, num2:Int) = num1 - num2 //As I just did here there is no need for return type
+       //The default values will be taken if i will call this
+       // function like this subtractWithDefault()
+       fun subtractWithDefault(num1:Int =1, num2:Int =2) = num1 - num2 
 
+
+             //named parameters, in kotlin you can put your parameters out of order inside a methid like this:
+            //subtractWithDefault(num1 = 4,num2 = 100) // look at the subtractWithDefault method as a reference
+
+
+    fun noReturnValue(){
+     println("Look how I return Unit and not void like java")
+    }
+
+
+    fun returnTwoValues(num:Int): Pair<Int,Int>{
+     return Pair(num+1,num+2)//return 2 values
+    
+     //Example of how to call this function
+     // val (next,nextNext) = returnTwoValues(1)
+     //println("First number is 1 and after comes $next and $nextNext")
+    
+    
 
 }
