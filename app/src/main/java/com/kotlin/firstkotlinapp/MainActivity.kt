@@ -177,6 +177,12 @@ class MainActivity : AppCompatActivity() {
      // val (next,nextNext) = returnTwoValues(1)
      //println("First number is 1 and after comes $next and $nextNext")
     
+        
+    fun filteringCollection(){
+        val collectionOfNums = 1..20
+        val fillteredCollection = collectionOfNums.filter { it %2 == 0 }//remove odd numbers
+        for (n in fillteredCollection) println("This is text $n")//print them
+}
     
 
 }
