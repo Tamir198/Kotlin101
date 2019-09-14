@@ -186,15 +186,16 @@ class MainActivity : AppCompatActivity() {
         
     //Start playing with lambda:***********************************************
         
-        
+        //Look I have a cool lambda that will go into below function
         val myLambda: (Int) -> Unit = {sum:Int -> print("printhing the sum $sum")}
-
+        
+        //And this function will accept some action that accept intand return Unit (it can accept the bove lambda)
         fun addTwoNumbers(num1:Int,num2:Int,action: (Int) -> Unit ){
               val sum = num1 + num2
-              action(sum)
+              action(sum)//pasing the sum to the lambda, I can have acces to the lambda beause I recived it as a method parameter
         }
 
-        addTwoNumbers(1,2,myLambda)
+        addTwoNumbers(1,2,myLambda)//Just calling the method
         
      //STOP playing with lambda:***********************************************
     
