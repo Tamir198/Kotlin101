@@ -183,6 +183,20 @@ class MainActivity : AppCompatActivity() {
         val fillteredCollection = collectionOfNums.filter { it %2 == 0 }//remove odd numbers
         for (n in fillteredCollection) println("This is text $n")//print them
 }
+        
+    //Start playing with lambda:***********************************************
+        
+        
+        val myLambda: (Int) -> Unit = {sum:Int -> print("printhing the sum $sum")}
+
+        fun addTwoNumbers(num1:Int,num2:Int,action: (Int) -> Unit ){
+              val sum = num1 + num2
+              action(sum)
+        }
+
+        addTwoNumbers(1,2,myLambda)
+        
+     //STOP playing with lambda:***********************************************
     
 
 }
