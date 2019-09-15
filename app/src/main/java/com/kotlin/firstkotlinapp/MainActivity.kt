@@ -223,6 +223,14 @@ class MainActivity : AppCompatActivity() {
         list.forEach { n -> print("this is me $n") }
 
     }
+        
+         fun maps() {
+            val map = mutableMapOf<Int,String>(1 to "value", 2 to "another value")
+            map[1] = "value for key 1 if now this"
+            map.put(3,"This is  the value for key 3")
+            for ((x,y) in map){
+                println("Key is $x while value is $y")}
+            }
 
         
         
