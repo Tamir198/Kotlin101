@@ -208,6 +208,21 @@ class MainActivity : AppCompatActivity() {
         println("the total sum is  ${sumOneToTen}")
         println("the total sum is  ${sumOneToTen2}")
         }
+        
+        fun mutableList(){
+        
+        /**
+         * No need for more examples,I check the documentation anytime
+         **/
+        //this list can change
+        var list:MutableList <Int> =  mutableListOf(1,2,3,5,6)
+        //this list cannot be changed (This is the normal list of kotlin by default )
+        val nonMutableList:List<Int> = listOf(1,2,3)
+
+        list.add(10) //add 6 at the end of list
+        list.forEach { n -> print("this is me $n") }
+
+    }
 
         
         
