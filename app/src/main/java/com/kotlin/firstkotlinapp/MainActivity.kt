@@ -231,6 +231,21 @@ class MainActivity : AppCompatActivity() {
             for ((x,y) in map){
                 println("Key is $x while value is $y")}
             }
+        //End of collections
+        
+        //Classes
+        
+        open class SampleClass(name:String){
+          var someName = name//no need to make getters and setters, it is built in 
+        }
+
+        fun learningClasses() {
+          val instantOfClass = SampleClass("my name is good") //no need to write new, just the type of your object
+           println(instantOfClass.someName) //there are default getters and setters for the class variables
+
+        }
+        
+        
 
         
         
