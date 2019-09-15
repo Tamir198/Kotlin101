@@ -182,7 +182,7 @@ class MainActivity : AppCompatActivity() {
         val collectionOfNums = 1..20
         val fillteredCollection = collectionOfNums.filter { it %2 == 0 }//remove odd numbers
         for (n in fillteredCollection) println("This is text $n")//print them
-}
+    }
         
     //Start playing with lambda:***********************************************
         
@@ -197,7 +197,21 @@ class MainActivity : AppCompatActivity() {
 
         addTwoNumbers(1,2,myLambda)//Just calling the method
         
-     //STOP playing with lambda:***********************************************
+      //STOP playing with lambda:***********************************************
+        
+      //Collections:
+        
+        fun sumOfCollection(){
+        val oneToTem = 1..10
+        val sumOneToTen = oneToTem.reduce{x,y -> x+y} //Sums up the total sum of numbers
+        val sumOneToTen2 = oneToTem.fold(5){x,y -> x+y} //same as above but start but start with 5
+        println("the total sum is  ${sumOneToTen}")
+        println("the total sum is  ${sumOneToTen2}")
+        }
+
+        
+        
+        
     
 
 }
